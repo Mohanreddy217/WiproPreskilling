@@ -27,7 +27,7 @@ class Employee:
         self.salary = salary
 
 
-# Demonstration
+# Example uasge
 emp1 = Employee("Alice", 50000)
 emp2 = Employee("Bob", 75000)
 

@@ -1,3 +1,5 @@
+# Create another class AdvancedCalculator that overrides a method from Calculator
+
 class Calculator:
     def calculate(self, a, b):
         return a + b

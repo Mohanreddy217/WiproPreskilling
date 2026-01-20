@@ -1,0 +1,16 @@
+[
+    {
+        "id": "S101",
+        "name": "Ananya Sharma",
+        "department": "Computer Science",
+        "average": 86.6,
+        "grade": "A"
+    },
+    {
+        "id": "S102",
+        "name": "Rohan Verma",
+        "department": "Computer Science",
+        "average": 77.0,
+        "grade": "B"
+    }
+]

@@ -2,8 +2,6 @@
 
 
 import re
-
-
 password = "StrongPass1!"
 
 pattern = r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$'

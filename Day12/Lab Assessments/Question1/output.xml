@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-01-29T22:14:19.854698" rpa="false" schemaversion="5">
+<suite id="s1" name="Intro Robot Framework" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day12\Lab Assessments\Question1\intro_robot_framework.robot">
+<test id="s1-t1" name="First Test Case" line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T22:14:19.920019" level="INFO">Hello, Robot Framework!</msg>
+<arg>${GREETING}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T22:14:19.919168" elapsed="0.000927"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${GREETING}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T22:14:19.920450" elapsed="0.000571"/>
+</kw>
+<status status="PASS" start="2026-01-29T22:14:19.917858" elapsed="0.003514"/>
+</test>
+<test id="s1-t2" name="Second Test Case" line="13">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T22:14:19.923263" level="INFO">The items are: ['One', 'Two', 'Three']</msg>
+<arg>The items are: ${ITEMS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T22:14:19.922787" elapsed="0.000545"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>First item is: ${ITEMS}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T22:14:19.923655" elapsed="0.000651"/>
+</kw>
+<status status="PASS" start="2026-01-29T22:14:19.922162" elapsed="0.002501"/>
+</test>
+<status status="PASS" start="2026-01-29T22:14:19.856527" elapsed="0.069233"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Intro Robot Framework" id="s1" pass="2" fail="0" skip="0">Intro Robot Framework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

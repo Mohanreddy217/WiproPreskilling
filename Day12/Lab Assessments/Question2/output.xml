@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-01-29T22:19:14.932787" rpa="false" schemaversion="5">
+<suite id="s1" name="Verify Installations" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day12\Lab Assessments\Question2\verify_installations.robot">
+<test id="s1-t1" name="Verify Python And Robot Framework Installation" line="7">
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-29T22:19:15.223957" level="INFO">Starting process:
+python --version</msg>
+<msg time="2026-01-29T22:19:15.233926" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-29T22:19:15.253612" level="INFO">Process completed.</msg>
+<msg time="2026-01-29T22:19:15.253984" level="INFO">${python} = &lt;result object with rc 0&gt;</msg>
+<var>${python}</var>
+<arg>python</arg>
+<arg>--version</arg>
+<arg>stdout=PIPE</arg>
+<arg>stderr=PIPE</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-29T22:19:15.222862" elapsed="0.031207"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Python Version: ${python.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T22:19:15.254663" elapsed="0.001671"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-29T22:19:15.257452" level="INFO">Starting process:
+robot --version</msg>
+<msg time="2026-01-29T22:19:15.261689" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-29T22:19:15.746887" level="INFO">Process completed.</msg>
+<msg time="2026-01-29T22:19:15.747154" level="INFO">${robot} = &lt;result object with rc 251&gt;</msg>
+<var>${robot}</var>
+<arg>robot</arg>
+<arg>--version</arg>
+<arg>stdout=PIPE</arg>
+<arg>stderr=PIPE</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-29T22:19:15.256732" elapsed="0.490477"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Framework Version: ${robot.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T22:19:15.747700" elapsed="0.001897"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>SeleniumLibrary imported successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T22:19:15.749984" elapsed="0.000502"/>
+</kw>
+<status status="PASS" start="2026-01-29T22:19:15.221507" elapsed="0.529378"/>
+</test>
+<status status="PASS" start="2026-01-29T22:19:14.934547" elapsed="0.817387"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Verify Installations" id="s1" pass="1" fail="0" skip="0">Verify Installations</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

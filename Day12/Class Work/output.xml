@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-01-29T16:33:57.066848" rpa="false" schemaversion="5">
+<suite id="s1" name="Google Test" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day12\Class Work\google_test.robot">
+<test id="s1-t1" name="TC004_Login.robot" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-29T16:33:57.296131" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-29T16:33:57.295826" elapsed="14.145610"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-29T16:34:16.442513" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-29T16:34:11.441883" elapsed="5.000766"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-29T16:34:16.443606" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-29T16:34:16.443113" elapsed="0.142354"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-29T16:34:16.586417" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-29T16:34:16.586028" elapsed="0.156479"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-29T16:34:21.744120" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-29T16:34:16.743020" elapsed="5.001313"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-29T16:34:21.811908" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="beforelogin.png"&gt;&lt;img src="beforelogin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>beforelogin.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-29T16:34:21.744858" elapsed="0.067251"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-29T16:34:21.812934" level="INFO">Clicking button 'xpath=//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath=//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-29T16:34:21.812641" elapsed="3.406166"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" start="2026-01-29T16:34:25.219183" elapsed="2.663964">Execution terminated by signal</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>afterlogin.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-29T16:34:27.883795" elapsed="0.000080"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-01-29T16:34:27.884638" elapsed="0.000105"/>
+</kw>
+<status status="FAIL" start="2026-01-29T16:33:57.294685" elapsed="30.590664">Execution terminated by signal</status>
+</test>
+<status status="FAIL" start="2026-01-29T16:33:57.068445" elapsed="30.819728"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Google Test" id="s1" pass="0" fail="1" skip="0">Google Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

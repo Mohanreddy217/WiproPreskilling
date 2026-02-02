@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-02-02T15:08:03.710960" rpa="false" schemaversion="5">
+<suite id="s1" name="Keyword Data Driven" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day13\Lab Assessments\Question2\keyword_data_driven.robot">
+<test id="s1-t1" name="Valid Login" line="5">
+<kw name="Login Validation">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T15:08:03.761869" level="INFO">Username=Admin, Password=admin123, Expected=pass</msg>
+<arg>Username=${username}, Password=${password}, Expected=${expected}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.761454" elapsed="0.000482"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T15:08:03.762727" level="INFO">Login Successful</msg>
+<arg>Login Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.762528" elapsed="0.000252"/>
+</kw>
+<arg>'${expected}' == 'pass'</arg>
+<arg>Log</arg>
+<arg>Login Successful</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.762086" elapsed="0.000751"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${expected}' == 'fail'</arg>
+<arg>Log</arg>
+<arg>Login Failed</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.762933" elapsed="0.000287"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<arg>pass</arg>
+<status status="PASS" start="2026-02-02T15:08:03.760899" elapsed="0.002393"/>
+</kw>
+<status status="PASS" start="2026-02-02T15:08:03.759948" elapsed="0.003665"/>
+</test>
+<test id="s1-t2" name="Invalid Login" line="6">
+<kw name="Login Validation">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T15:08:03.766220" level="INFO">Username=Admin, Password=wrongpass, Expected=fail</msg>
+<arg>Username=${username}, Password=${password}, Expected=${expected}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.765759" elapsed="0.000527"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${expected}' == 'pass'</arg>
+<arg>Log</arg>
+<arg>Login Successful</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.766432" elapsed="0.000354"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T15:08:03.767512" level="INFO">Login Failed</msg>
+<arg>Login Failed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.767274" elapsed="0.000290"/>
+</kw>
+<arg>'${expected}' == 'fail'</arg>
+<arg>Log</arg>
+<arg>Login Failed</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.766915" elapsed="0.000698"/>
+</kw>
+<arg>Admin</arg>
+<arg>wrongpass</arg>
+<arg>fail</arg>
+<status status="PASS" start="2026-02-02T15:08:03.765340" elapsed="0.002337"/>
+</kw>
+<status status="PASS" start="2026-02-02T15:08:03.764488" elapsed="0.003562"/>
+</test>
+<test id="s1-t3" name="Unknown User" line="7">
+<kw name="Login Validation">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T15:08:03.770532" level="INFO">Username=User, Password=user123, Expected=fail</msg>
+<arg>Username=${username}, Password=${password}, Expected=${expected}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.770028" elapsed="0.000587"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${expected}' == 'pass'</arg>
+<arg>Log</arg>
+<arg>Login Successful</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.770807" elapsed="0.000627"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T15:08:03.773300" level="INFO">Login Failed</msg>
+<arg>Login Failed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.772588" elapsed="0.000986"/>
+</kw>
+<arg>'${expected}' == 'fail'</arg>
+<arg>Log</arg>
+<arg>Login Failed</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T15:08:03.771795" elapsed="0.001910"/>
+</kw>
+<arg>User</arg>
+<arg>user123</arg>
+<arg>fail</arg>
+<status status="PASS" start="2026-02-02T15:08:03.769372" elapsed="0.004446"/>
+</kw>
+<status status="PASS" start="2026-02-02T15:08:03.768696" elapsed="0.005531"/>
+</test>
+<status status="PASS" start="2026-02-02T15:08:03.713121" elapsed="0.062054"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Keyword Data Driven" id="s1" pass="3" fail="0" skip="0">Keyword Data Driven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-02-02T14:49:57.676426" rpa="false" schemaversion="5">
+<suite id="s1" name="TC005 DDEXCEL" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day13\Class Work\TC005_DDEXCEL.robot">
+<test id="s1-t1" name="TC006_DDExcel_Login" line="32">
+<status status="FAIL" start="2026-02-02T14:49:58.609488" elapsed="0.001190">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2026-02-02T14:49:57.677905" elapsed="0.933920"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC005 DDEXCEL" id="s1" pass="0" fail="1" skip="0">TC005 DDEXCEL</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-02T14:49:58.603913" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day13\Class Work\TC005_DDEXCEL.robot", line 0</msg>
+<msg time="2026-02-02T14:49:58.605111" level="ERROR">In source file:
+  File "testdata.xlsx", line 0</msg>
+<msg time="2026-02-02T14:49:58.609029" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>

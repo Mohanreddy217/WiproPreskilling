@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-02-02T16:58:54.894258" rpa="false" schemaversion="5">
+<suite id="s1" name="Selenium Interactions" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day14\Lab Assessments\Question2\selenium_interactions.robot">
+<test id="s1-t1" name="Interact With Web Elements Using Selenium" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:58:55.144688" level="INFO">Opening browser 'edge' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T16:58:55.144330" elapsed="12.321287"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T16:59:07.466238" elapsed="0.057952"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:59:07.526131" level="INFO">Typing text 'Mohan' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>Mohan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:59:07.525031" elapsed="0.306845"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:59:07.832642" level="INFO">Typing text 'Reddy' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>Reddy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:59:07.832280" elapsed="0.171310"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:59:08.005003" level="INFO">Clicking element 'xpath=//label[text()='Male']'.</msg>
+<arg>xpath=//label[text()='Male']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:59:08.004534" elapsed="0.124060"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:59:08.129902" level="INFO">Clicking element 'xpath=//label[text()='Sports']'.</msg>
+<msg time="2026-02-02T16:59:09.568493" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-02T16:59:09.568883" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="hobbies-checkbox-1" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (535, 498). Other element would receive the click: &lt;iframe frameborder="0" src="https://af702bf15ff72773a4aafa758037db2d.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=144.0.3719.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff604675085
+	0x7ff6046750e4
+	0x7ff6049c28f4
+	0x7ff60441ca0c
+	0x7ff60441aede
+	0x7ff604418ce5
+	0x7ff604418115
+	0x7ff60440dc6d
+	0x7ff6044375ea
+	0x7ff60440d6b7
+	0x7ff60440d5bd
+	0x7ff60440d6b7
+	0x7ff6044528f7
+	0x7ff60440cbcc
+	0x7ff60440be26
+	0x7ff60440c9f3
+	0x7ff6044d0214
+	0x7ff6044cc685
+	0x7ff6044dce73
+	0x7ff6046903b8
+	0x7ff604698c86
+	0x7ff60467c764
+	0x7ff60467c8a9
+	0x7ff60466a742
+	0x7ff8e192e8d7
+	0x7ff8e282c53c
+</msg>
+<arg>xpath=//label[text()='Sports']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-02T16:59:08.129397" elapsed="1.449321">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="hobbies-checkbox-1" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (535, 498). Other element would receive the click: &lt;iframe frameborder="0" src="https://af702bf15ff72773a4aafa758037db2d.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=144.0.3719.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff604675085
+	0x7ff6046750e4
+	0x7ff6049c28f4
+    [ Message content over the limit has been removed. ]
+	0x7ff604418115
+	0x7ff60440dc6d
+	0x7ff6044375ea
+	0x7ff60440d6b7
+	0x7ff60440d5bd
+	0x7ff60440d6b7
+	0x7ff6044528f7
+	0x7ff60440cbcc
+	0x7ff60440be26
+	0x7ff60440c9f3
+	0x7ff6044d0214
+	0x7ff6044cc685
+	0x7ff6044dce73
+	0x7ff6046903b8
+	0x7ff604698c86
+	0x7ff60467c764
+	0x7ff60467c8a9
+	0x7ff60466a742
+	0x7ff8e192e8d7
+	0x7ff8e282c53c</status>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2026-02-02T16:59:09.579527" elapsed="0.000108"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${title}' != ''</arg>
+<arg>Log</arg>
+<arg>Page title is displayed</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-02-02T16:59:09.580120" elapsed="0.000133"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-02T16:59:09.581023" elapsed="0.000149"/>
+</kw>
+<status status="FAIL" start="2026-02-02T16:58:55.143056" elapsed="14.440351">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="hobbies-checkbox-1" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (535, 498). Other element would receive the click: &lt;iframe frameborder="0" src="https://af702bf15ff72773a4aafa758037db2d.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=144.0.3719.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff604675085
+	0x7ff6046750e4
+	0x7ff6049c28f4
+    [ Message content over the limit has been removed. ]
+	0x7ff604418115
+	0x7ff60440dc6d
+	0x7ff6044375ea
+	0x7ff60440d6b7
+	0x7ff60440d5bd
+	0x7ff60440d6b7
+	0x7ff6044528f7
+	0x7ff60440cbcc
+	0x7ff60440be26
+	0x7ff60440c9f3
+	0x7ff6044d0214
+	0x7ff6044cc685
+	0x7ff6044dce73
+	0x7ff6046903b8
+	0x7ff604698c86
+	0x7ff60467c764
+	0x7ff60467c8a9
+	0x7ff60466a742
+	0x7ff8e192e8d7
+	0x7ff8e282c53c</status>
+</test>
+<status status="FAIL" start="2026-02-02T16:58:54.896050" elapsed="14.689693"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Selenium Interactions" id="s1" pass="0" fail="1" skip="0">Selenium Interactions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

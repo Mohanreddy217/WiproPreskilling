@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.4 on win32)" generated="2026-02-02T16:52:16.908101" rpa="false" schemaversion="5">
+<suite id="s1" name="Example Suite" source="C:\Users\Mohan Reddy\OneDrive\Documents\WiproPreskilling\Day14\Lab Assessments\Question1\example_suite.robot">
+<kw name="Suite Level Setup" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:52:16.956822" level="INFO">=== Suite Setup: Initializing resources ===</msg>
+<arg>=== Suite Setup: Initializing resources ===</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:52:16.956516" elapsed="0.000383"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:52:16.956098" elapsed="0.000900"/>
+</kw>
+<test id="s1-t1" name="Sample Passing Test" line="21">
+<kw name="Test Level Setup" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:52:16.958238" level="INFO">--- Test Setup: Preparing test ---</msg>
+<arg>--- Test Setup: Preparing test ---</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:52:16.957955" elapsed="0.000348"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:52:16.957655" elapsed="0.000723"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:52:16.958986" level="INFO">Executing a tagged test case</msg>
+<arg>Executing a tagged test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:52:16.958715" elapsed="0.000324"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>2</arg>
+<arg>2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-02-02T16:52:16.959360" elapsed="0.000287"/>
+</kw>
+<kw name="Test Level Teardown" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:52:16.960612" level="INFO">--- Test Teardown: Cleaning up test ---</msg>
+<arg>--- Test Teardown: Cleaning up test ---</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:52:16.960254" elapsed="0.000429"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:52:16.960002" elapsed="0.000777"/>
+</kw>
+<tag>regression</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-02-02T16:52:16.957069" elapsed="0.003868"/>
+</test>
+<kw name="Suite Level Teardown" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:52:16.962766" level="INFO">=== Suite Teardown: Cleaning up suite resources ===</msg>
+<arg>=== Suite Teardown: Cleaning up suite resources ===</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:52:16.962178" elapsed="0.000647"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:52:16.961976" elapsed="0.000917"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:52:16.910093" elapsed="0.052832"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Example Suite" id="s1" pass="1" fail="0" skip="0">Example Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

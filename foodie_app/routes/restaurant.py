@@ -7,17 +7,14 @@ restaurant_id_counter = 1
 
 
 @restaurant_bp.route("/api/v1/restaurants", methods=["POST"])
-def register_restaurant():
+def create_restaurant():
     global restaurant_id_counter
 
     data = request.get_json()
 
-    if not data or not data.get("name"):
-        return jsonify({"error": "Restaurant name required"}), 400
-
     restaurant = {
         "id": restaurant_id_counter,
-        "name": data["name"],
+        "name": data.get("name"),
         "category": data.get("category"),
         "location": data.get("location"),
         "contact": data.get("contact"),
@@ -43,12 +40,10 @@ def get_restaurant(restaurant_id):
 @restaurant_bp.route("/api/v1/restaurants/<int:restaurant_id>", methods=["PUT"])
 def update_restaurant(restaurant_id):
     data = request.get_json()
-
     for restaurant in restaurants:
         if restaurant["id"] == restaurant_id:
             restaurant.update(data)
             return jsonify(restaurant), 200
-
     return jsonify({"error": "Restaurant not found"}), 404
 
 
@@ -57,6 +52,5 @@ def disable_restaurant(restaurant_id):
     for restaurant in restaurants:
         if restaurant["id"] == restaurant_id:
             restaurant["enabled"] = False
-            return jsonify({"message": "Restaurant disabled successfully"}), 200
-
+            return jsonify({"message": "Restaurant disabled"}), 200
     return jsonify({"error": "Restaurant not found"}), 404

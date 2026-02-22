@@ -20,7 +20,7 @@ if (true === true) {
         ue_mid = "A21TJRUUN4KGV",
         ue_sid = (document.cookie.match(/session-id=([0-9-]+)/) || [])[1],
         ue_sn = "opfcaptcha.amazon.in",
-        ue_id = 'KYMFS1P6R9RPJ2AEE3Z0';
+        ue_id = 'NAJVFSSNYWFCCWWRB0V8';
 }
 </script>
 </head>
@@ -54,8 +54,8 @@ Correios.DoNotSend
                     <div class="a-box-inner a-padding-extra-large">
 
                         <form method="get" action="/errors/validateCaptcha" name="">
-                            <input type=hidden name="amzn" value="ETU6kQtBwWwmiJZX1b/g1w==" /><input type=hidden name="amzn-r" value="&#047;" />
-                            <input type=hidden name="field-keywords" value="YCARXU" />
+                            <input type=hidden name="amzn" value="PpVZTXoQNH4i7SL6fNooJQ==" /><input type=hidden name="amzn-r" value="&#047;" />
+                            <input type=hidden name="field-keywords" value="XXKPRH" />
                             <div class="a-section a-spacing-extra-large">
 
                                 <div class="a-row">
@@ -91,11 +91,11 @@ Correios.DoNotSend
           &copy; 1996-2025, Amazon.com, Inc. or its affiliates
           <script>
            if (true === true) {
-             document.write('<img src="https://fls-eu.amaz'+'on.in/'+'1/oc-csi/1/OP/requestId=KYMFS1P6R9RPJ2AEE3Z0&js=1" alt=""/>');
+             document.write('<img src="https://fls-eu.amaz'+'on.in/'+'1/oc-csi/1/OP/requestId=NAJVFSSNYWFCCWWRB0V8&js=1" alt=""/>');
            };
           </script>
           <noscript>
-            <img src="https://fls-eu.amazon.in/1/oc-csi/1/OP/requestId=KYMFS1P6R9RPJ2AEE3Z0&js=0" alt=""/>
+            <img src="https://fls-eu.amazon.in/1/oc-csi/1/OP/requestId=NAJVFSSNYWFCCWWRB0V8&js=0" alt=""/>
           </noscript>
         </div>
     </div>

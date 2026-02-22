@@ -29,4 +29,4 @@ print("Standard Deviation of Daily Sales:", std_dev_sales)
 product_sales = df.groupby("Product")["Quantity"].sum()
 best_selling_product = product_sales.idxmax()
 
-print("\nBest Selling Product:", best_selling_product)
+print("\nBest Selling Product:", best_selling_product
